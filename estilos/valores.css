@@ -150,6 +150,25 @@ main {
     .content {
         grid-template-columns: repeat(2, 1fr);
     }
+    
+    .link__noticias {
+    display: grid;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    background: #057b5c;
+    color: #FFFFFF;
+    width: 32%;
+    margin: 5px auto;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.link__noticias:hover {
+    background: #045540;
+    color: #FFFFFF;
+}
+
 
 }
 
