@@ -1,0 +1,108 @@
+.max-width {
+    max-width: 100%;
+    padding: 0 20px;
+    margin: auto;
+}
+
+section {
+    padding: 0px 0PX;
+}
+
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+}
+
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+section .title::after {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: #4b2160;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.services .serv-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.services {
+    color: #333;
+    background: #D3D3D3;
+}
+
+.services .title::before {
+    background: #fff;
+}
+
+.services .title::after {
+    background: #D3D3D3;
+    content: "Molango";
+}
+
+.services .serv-content .card {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    max-width: 100%;
+    margin: auto;
+    background: #E30613;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover {
+    background: #057B5C;
+}
+
+.services .serv-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.services .serv-content .card i {
+    font-size: 50px;
+    color: #057B5C;
+    transition: color 0.3s ease;
+}
+
+.services .serv-content .card:hover i {
+    color: #fff;
+}
+
+.services .serv-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.services a {
+    color: white;
+    text-decoration: none;
+}

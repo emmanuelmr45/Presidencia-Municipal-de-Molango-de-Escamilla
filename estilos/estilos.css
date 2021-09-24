@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headTecNM {
+    width: 100%;
+    height: 120px;
+    background: #D3D3D3;
+    align-items: center;
+    display: grid;
+    z-index: 1000;
+}
+
+.headTecNM__oficial {
+    height: 60px;
+    padding: 0px 20px 0px 50px;
+}
+
+.headTecNM__unoficial {
+    height: 60px;
+    padding: 0px 20px 0px 50px;
+
+}
+
+.headTecNM__pleca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headTecNM__title {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+}
+
+.headTecNM__subtitle {
+    margin-top: 0px;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-weight: 300;
+    font-size: 1.4em;
+}
+
+.headTecNM__Main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: var(--azulLogo);
+    visibility: hidden;
+}
+
+.headTecNM__Main a {
+    color: white;
+}

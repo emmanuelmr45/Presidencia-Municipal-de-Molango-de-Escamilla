@@ -1,0 +1,38 @@
+.contenedor2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.caja {
+    border: 1px solid black;
+    padding: 5px;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imginfo {
+    border: 1px solid black;
+    max-width: 25%;
+    max-height: 50%;
+}
+
+.animado {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.mostrarArriba {
+    animation: mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba {
+    0% {
+        transform: translateY(60px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

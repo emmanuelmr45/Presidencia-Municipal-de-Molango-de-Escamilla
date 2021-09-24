@@ -1,0 +1,34 @@
+.index {
+    padding: 20px 0px;
+}
+
+.if__banner {
+    height: 30vw;
+    background: rgba(0, 0, 0, 0);
+}
+
+.if__facebook {
+    width: 100%;
+    height: 100%;
+    background-color: #F2F2F2;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.if__facebook div {
+    flex-basis: 300px;
+    margin-top: 15px;
+}
+
+
+@media screen and (max-width:800px) {
+
+    .index {
+        padding: 45px 0px;
+    }
+
+}

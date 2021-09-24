@@ -1,0 +1,178 @@
+:root {
+    /**Medidas**/
+    --expand: 94%;
+    --expand-max: 98%;
+    --expand-min: 85%;
+    --padding: calc(100% - var(--expand));
+    --padding-max: calc(100% - var(--expand-max));
+    --padding-min: calc(100% - var(--expand-min));
+}
+
+.footTecNM {
+    padding: 20px 0px calc(var(--padding) / 2);
+    background: #800000;
+    display: grid;
+    grid-gap: 0px 15px;
+    grid-template-areas: "info""maps""private";
+    font-size: .75rem;
+}
+
+.TecNMinfo {
+    grid-area: "info";
+    display: grid;
+    grid-gap: 20px;
+    grid-auto-columns: repeat(2, 50%);
+    grid-auto-rows: repeat(2, 50%);
+    grid-template-areas: "adress enlace""contacto redes";
+}
+
+.TecNMMaps {
+    grid-area: "maps";
+    width: 100%;
+}
+
+.TecNMPrivate {
+    grid-area: "private";
+    text-align: center;
+    color: #fff;
+}
+
+.TecNM__direccion {
+    grid-area: "adress";
+}
+
+.TecNM__contacto {
+    grid-area: "contacto";
+}
+
+.TecNM__enlaces {
+    grid-area: "enlace";
+}
+
+.TecNM__redes {
+    grid-area: "redes";
+}
+
+
+.footTecNM div {
+    padding-top: 10px;
+}
+
+.Info__list {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.Info__hlist {
+    margin: 0;
+    display: flex;
+    padding: 0px;
+}
+
+.Info__Item {
+    list-style: none;
+    display: inline;
+    padding: 0px;
+}
+
+.Info__link:hover {
+    text-decoration: underline;
+}
+
+
+.Info__Icon {
+    list-style: none;
+    width: 30px;
+}
+
+.Info__title {
+    font-size: 1.5em !important;
+    padding-bottom: 10px;
+}
+
+.Info__parrafo {
+    padding-bottom: 1em;
+}
+
+.Info--center {
+    text-align: center;
+}
+
+.Info__link,
+.Info__ulink,
+.Info__parrafo,
+.Info__title {
+    color: #FFF;
+    text-decoration: none;
+    margin: 0;
+}
+
+.Info__link i,
+.Info__ulink i,
+.Info__parrafo i,
+.Info__title i {
+    font-size: 1.4em;
+}
+
+@media screen and (max-width:576px) {
+
+    .footTecNM {
+        grid-template-columns: 1fr;
+        grid-template-areas: "info""maps""private";
+    }
+
+    .TecNMinfo {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-areas: "adress""enlace""contacto""redes";
+    }
+
+    .TecNMPrivate {
+        text-align: center;
+        color: #fff;
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    .footTecNM {
+        font-size: .7rem;
+        padding: 20px calc(var(--padding-max) / 2);
+    }
+}
+
+@media screen and (max-width:989px) {
+
+    .footTecNM {
+        font-size: .7rem;
+        padding: 20px calc(var(--padding-max) / 2);
+    }
+}
+
+
+
+@media screen and (min-width:990px) {
+
+    .footTecNM {
+        padding: 20px calc(var(--padding-min) / 2);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "info maps""private";
+    }
+
+    .TecNMinfo {
+        grid-area: info;
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-areas: "adress enlace""contacto redes";
+    }
+
+    .TecNMPrivate {
+        grid-column: span 2;
+        text-align: center;
+        color: #fff;
+    }
+}
