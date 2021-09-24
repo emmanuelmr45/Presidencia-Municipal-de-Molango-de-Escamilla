@@ -52,12 +52,12 @@ body {
     position: relative;
     height: 100%;
     --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
-    --transform: rotate(-90deg);
+    --transform: rotate(0deg);
 }
 
 .menu__item:hover {
     --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    --transform: rotate(0);
+    --transform: rotate(-180deg);
 }
 
 .menu__link {
@@ -197,7 +197,7 @@ body {
         top: 75px;
         bottom: 0;
         right: 0;
-        background-color: #d42c33;
+        background-color: rgba(255,0,0,0.8);
         overflow-y: auto;
         display: grid;
         grid-auto-rows: max-content;
@@ -233,7 +233,7 @@ body {
     .menu__link--inside {
         width: 90%;
         margin-left: auto;
-        border-left: 1px solid #798499;
+        border-left: 1px solid #D2D2D2;
     }
 
     .headTecNM__title {
